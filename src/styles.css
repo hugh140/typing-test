@@ -1,0 +1,98 @@
+.green-text {
+    color: #69DC9E;
+}
+.yellow-text {
+    color: #E59F71;
+}
+.correct-letter {
+    color: #69DC9E;
+}
+.wrong-letter {
+    color: #BA5A31;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    gap: 0 40px;
+}
+.typing-word {
+    text-align: end;
+}
+.init-body {
+    border: 20px solid #D06125;
+    padding: 0px 0px;
+    background-color: #F9E6DC;
+}
+.timer {
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.stat-result {
+    color: #D06125;
+}
+.reload-button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    border: 4px solid #D06125;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+.reload-button:hover {
+    color: white;
+    background-color: #D06125;
+}
+.reload-button:active {
+    background-color: #743716;  
+    border-color: #743716;  
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Golos Text', sans-serif;
+    color: #0C0C0C;
+    background-color: #FCF3EE;
+    padding: 20px;
+    margin: 0;
+    height: calc(100% + 100vh);
+}
+input {
+    width: 400px;
+    font-size: 3rem;
+    text-align: end;
+}
+section {
+    margin: 0 3%;
+}
+
+@media (max-width: 1200px) {
+    .text {
+        flex-direction: column;
+    }
+    .typing-word {
+        text-align: center;
+    }
+    input {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#results {
+    text-align: center;
+    margin-bottom: 10%;
+}
+#results h1 {
+    color: #BA5A31;
+} 
+#results p {
+    margin: 0;
+    margin-bottom: 5px;
+}
