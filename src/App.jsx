@@ -24,13 +24,13 @@ function App() {
   const [initTimer, setInitTimer] = useState(false);
 
   useEffect(() => {
-    // fetch("http://metaphorpsum.com/paragraphs/1/20")
-    //   .then((response) => response.text())
-    //   .then((data) => {
-    //     const splitData = data.split(" ");
-    //     setText(splitData);
-    //     setClassName(Array(splitData.length).fill(false));
-    //   });
+     fetch("http://metaphorpsum.com/paragraphs/1/20")
+       .then((response) => response.text())
+       .then((data) => {
+         const splitData = data.split(" ");
+         setText(splitData);
+         setClassName(Array(splitData.length).fill(false));
+       });
 
     const splitData = tale.split(" ");
     setText(splitData);
